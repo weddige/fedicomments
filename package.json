@@ -1,0 +1,24 @@
+{
+  "name": "fedicomments",
+  "version": "0.1.0",
+  "description": "An easy way to include comments from the fediverse in a website",
+  "main": "./dist/FediComments.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc"
+  },
+  "author": "Konstantin Weddige",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/weddige/fedicomments.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "dompurify": "^3.0.2"
+  },
+  "devDependencies": {
+    "@types/dompurify": "^3.0.2",
+    "typescript": "^5.0.4"
+  }
+}
