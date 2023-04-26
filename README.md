@@ -7,7 +7,7 @@ FediComments is a module for easy integration of Mastodon comments into a websit
 The module can be installed via `npm`:
 
 ```bash
-npm install git+https://github.com/weddige/fedicomments.git
+npm install fedicomments
 ```
 
 ## Usage
