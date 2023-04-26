@@ -1,6 +1,6 @@
 {
   "name": "fedicomments",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "An easy way to include comments from the fediverse in a website",
   "main": "./dist/FediComments.js",
   "scripts": {

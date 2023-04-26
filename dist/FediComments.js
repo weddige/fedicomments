@@ -36,9 +36,10 @@ export default class FediComments {
         toot.account.display_name = this.escapeHtml(toot.account.display_name);
         // We should do a schema validation as this is just a guess.
         toot.account.emojis.forEach(emoji => {
-            toot.account.display_name = toot.account.display_name.replace(`:${emoji.shortcode}:`, `<img src="${this.escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
+            toot.account.display_name = this.escapeHtml(toot.account.display_name).replace(`:${emoji.shortcode}:`, `<img src="${this.escapeHtml(emoji.static_url)}" alt="Emoji ${emoji.shortcode}" height="20" width="20" />`);
         });
         toot.account.avatar_static = this.escapeHtml(toot.account.avatar_static);
+        toot.content = DOMPurify.sanitize(toot.content);
         toot.auxiliary = {
             "depth": depth,
             "account": this.user_account(toot.account)
